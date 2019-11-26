@@ -1,0 +1,29 @@
+### Building the package
+The code is written in `go` (version go1.10.4 linux/amd64). To build the package
+
+```
+cd bf
+go build
+
+cd bbf
+go build
+```
+
+The benchmarks were run on a 64 bit machine running ubuntu using the WSL. To run the benchmarks locally
+
+```
+bf runtests
+bbf runtests
+```
+
+The kmer strings were generated using the python code 
+
+```
+python kmer-generator.py
+```
+
+The kmers were randomly shuffled around using
+(was taken from https://stackoverflow.com/a/2153889)
+```
+ cat kmer.txt | awk 'BEGIN{srand();}{print rand()"\t"$0}' | sort -k1 -n | cut -f2- > kmer.shuf
+```
