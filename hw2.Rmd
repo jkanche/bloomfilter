@@ -1,5 +1,5 @@
 ---
-title: "CMSC858D Homework 1 : Implementing some succinct primitives"
+title: "CMSC858D Homework 2 : Caring for your cache with AMQs"
 author: "Jayaram Kancherla"
 date: "11/25/2019"
 output: pdf_document
@@ -9,7 +9,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Source code available at https://github.com/jkanche/wavelet_trees
+### Source code available at https://github.com/jkanche/bloomfilter
 
 
 ### Building the package
